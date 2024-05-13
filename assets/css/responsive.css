@@ -25,7 +25,7 @@
     position: absolute;
     width: 100%;
     left: calc(50% - 0px);
-    top: calc(50% + 85px);
+    top: calc(50% + 194px);
     transform: translate(-50%, -50%);
 }
 ._3banner_button {
@@ -33,7 +33,7 @@
     position: absolute;
     width: 100%;
     left: calc(50% - 0px);
-    top: calc(50% + 169px);
+    top: calc(50% + 280px);
     transform: translate(-50%, -50%);
 }
 ._bg_img_man {
@@ -69,6 +69,25 @@
     left: 50%;
     top: calc(50% + 138px);
     transform: translate(-50%, -50%);
+}
+._3banner_right {
+    flex: auto;
+    max-width: 100%;
+    position: relative;
+}
+._3banner_left {
+    flex: 0 0 22%;
+    max-width: 100%;
+    position: relative;
+}
+._3banner_title {
+    position: absolute;
+    width: 100%;
+    left: calc(50% - 0px);
+    top: calc(50% - 4px);
+    margin-top: 68px;
+    font-size: 36px;
+    line-height: 47px;
 }
 }
 /* Mobile */
