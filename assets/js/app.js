@@ -77,7 +77,7 @@ gsap.from("._3banner_button",{
 
 timeline.from("._bg_img_man",{
     opacity:0,
-    duration:1.5,
+    duration:2,
     scale:2,
 })
 timeline.from("._bg_img_man_sha",{

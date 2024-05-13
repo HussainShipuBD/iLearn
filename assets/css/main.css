@@ -452,17 +452,29 @@ left: 66.6%;
 
 
 /* ===================== */
-._1navbar{
+._1navbar {
+    position: absolute;
     display: flex;
     align-items: center;
     background: transparent;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     padding: 18px 45px;
     z-index: 1111;
+}
+._1navbar-mob_button{
+    display: none;
+    flex: 0 0 auto;
+}
+._1navbar-mob_button span {
+    display: block;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 0 1px 0;
+    margin-left: 7px;
 }
 ._1navbar_logo{
     flex: 1 1;
@@ -568,6 +580,7 @@ left: 66.6%;
         0 5px 10px rgb(255 0 0 / 25%),
         0 10px 10px rgb(255 0 0 / 20%),
         0 20px 20px rgb(255 0 0 / 15%);
+        text-shadow: 0 1px 0 #e6464682, 0 2px 0 #e83e3e73, 0 3px 0 #ff232378, 0 4px 0 #b3000087, 0 5px 0 #a316165e, 0 6px 1px rgb(255 176 176 / 10%), 0 0px 5px rgb(255 0 0 / 10%), 0 1px 3px rgb(255 0 0 / 30%), 0 3px 5px rgb(255 0 0 / 20%), 0 5px 10px rgb(255 0 0 / 25%), 0 10px 10px rgb(255 0 0 / 20%), 0 20px 20px rgb(255 0 0 / 15%);
 }
 ._3banner_text{
     color: #fff;
