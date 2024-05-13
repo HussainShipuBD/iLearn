@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Toni & Guy</title>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <div class="_1banner_menu">
+    <!-- Left sidebar -->
+    <!-- Left sidebar -->
+    
+    <!-- Banner -->
+    <div class="_1banner">
+      <div class="overlay first"></div>
+      <div class="overlay second"></div>
+      <div class="overlay third"></div>
+      
+      <nav class="navbar">
+        <div class="menu">
+          <ion-icon name="ios-menu"></ion-icon>
+        </div>
+        <div class="lang">eng</div>
+        <div class="search">
+          <ion-icon name="ios-search"></ion-icon>
+        </div>
+      </nav>
+
+      <div class="media">
+        <ul>
+          <li>facebook</li>
+          <li>instagram</li>
+          <li>twitter</li>
+        </ul>
+      </div>
+
+      <div class="text">
+        <h1>
+          <span class="hidetext">HUSSAIN</span>
+        </h1>
+        <h2>SHIPU</h2>
+        <h3>
+          <span class="hidetext">collection 2017 <br> duality</span>
+        </h3>
+        <p>
+          <span class="hidetext">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quis, delectus facere
+            neque sunt commodi quae
+            culpa dolores doloribus magnam?
+          </span>
+        </p>
+      </div>
+
+      <div class="sponsor">
+        <img src="./images/sponsor-logo.png" alt="">
+        <p>official sponsor</p>
+      </div>
+      
+      <div class="distortion2">
+      <div class="distortion2_main">
+        <!-- <img src="assets/img/02.png" alt="" title=""> -->
+      </div>
+      </div>
+    </div>
+    <!-- Banner -->
+
+    <!--====== Product =======-->
+    <div class="_2product">
+      <div class="_2nav">
+        <div class="_2logo">
+          <h1>
+            <span>rein <br> deer</span>
+            <br>
+            snow life
+          </h1>
+        </div>
+  
+        <div class="menu-links">
+          <ul>
+            <li>home.</li>
+            <li>snow life.</li>
+            <li>contact.</li>
+          </ul>
+        </div>
+  
+        <div class="scrolldown">scroll</div>
+      </div>
+  
+      <div class="_2text">
+        <div class="title">reindeer</div>
+        <p>Mauris elementum, dui ac sagittis <br> cursus, libero elit sodales odio</p>
+      </div>
+  
+      <div class="watchnow">
+        <i class="fa fa-play"></i>
+        <a href="#">watch now!</a>
+      </div>
+  
+      <div class="_2media">
+        <ul>
+          <li><i class="fa fa-facebook"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-instagram"></i></li>
+        </ul>
+      </div>
+  
+      <div class="ellipse-container">
+        <div class="ellipse thin"></div>
+        <div class="ellipse thick"></div>
+        <div class="ellipse yellow"></div>
+        <div class="circle1"><span>Maecenas purus at</span></div>
+        <div class="circle2"><span>Fringilla Maecenas</span></div>
+      </div>
+    </div>
+    <!--====== Product =======-->
+
+
+  </div>
+
+  <div style="height: 1500px;"></div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <!-- three js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+    integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+  <!-- hover-effect js -->
+  <!-- <script src="assets/js/hover-effect.umd.js"></script> -->
+
+  <script>
+    // new hoverEffect({
+    //   parent: document.querySelector('.distortion'),
+    //   intensity: 0.2,
+    //   image1: './images/01.png',
+    //   image2: './images/02.png',
+    //   displacementImage: './images/diss.png',
+    //   imagesRatio: 380 / 300
+    // })
+
+    // Banner
+    TweenMax.staggerFrom(".navbar div", 1.5, {
+      delay: 1.5,
+      opacity: 0,
+      y: "20",
+      ease: Expo.easeInOut
+    }, 0.08);
+    TweenMax.staggerFrom(".media ul li", 1.5, {
+      delay: 1.5,
+      opacity: 0,
+      x: "-20",
+      ease: Expo.easeInOut
+    }, 0.08);
+
+    // TEXT
+    TweenMax.from(".text h1 .hidetext", 1.5, {
+      delay: 1,
+      y: "100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".text h3 .hidetext", 1.5, {
+      delay: 1.2,
+      y: "100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".text p .hidetext", 1.5, {
+      delay: 1.3,
+      y: "100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".text h2", 1.5, {
+      delay: 1.5,
+      opacity: 0,
+      x: "-10000",
+      ease: Expo.easeInOut
+    });
+
+    // SPONSOR
+    TweenMax.from(".sponsor img", 1.5, {
+      delay: 1.5,
+      opacity: 0,
+      y: "20",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".sponsor p", 1.5, {
+      delay: 1.6,
+      opacity: 0,
+      y: "20",
+      ease: Expo.easeInOut
+    });
+
+    // DISTORTION
+    TweenMax.from(".distortion", 1.5, {
+      delay: 2,
+      opacity: 0,
+      y: "20",
+      ease: Expo.easeInOut
+    });
+
+    // OVERLAY
+    TweenMax.to(".first", 1.5, {
+      delay: .5,
+      top: "-100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.to(".second", 1.5, {
+      delay: .7,
+      top: "-100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.to(".third", 1.5, {
+      delay: .9,
+      top: "-100%",
+      ease: Expo.easeInOut
+    });
+
+    // Product
+    TweenMax.to(".overlay h1", 2, {
+      opacity: 0,
+      y: -60,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".overlay span", 2, {
+      delay: .3,
+      opacity: 0,
+      y: -60,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".overlay", 2, {
+      delay: 1,
+      top: "-100%",
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".ellipse-container", 1, {
+      delay: 2,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".yellow", 1, {
+      delay: 3.5,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".circle1", 1, {
+      delay: 2.4,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".circle2", 1, {
+      delay: 2.6,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from("._2logo", 1, {
+      delay: 3,
+      opacity: 0,
+      y: -100,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom(".menu-links ul li", 1, {
+      delay: 3.2,
+      opacity: 0,
+      x: -100,
+      ease: Expo.easeInOut
+    }, 0.08)
+
+    TweenMax.from(".scrolldown", 1, {
+      delay: 3.4,
+      opacity: 0,
+      y: 100,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from("._2text .title", 1, {
+      delay: 3,
+      opacity: 0,
+      x: 200,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from("._2text p", 1, {
+      delay: 3.2,
+      opacity: 0,
+      x: 200,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".watchnow", 1, {
+      delay: 3.4,
+      opacity: 0,
+      x: 200,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom("._2media ul li", 1, {
+      delay: 3,
+      opacity: 0,
+      y: 100,
+      ease: Expo.easeInOut
+    }, 0.08)
+
+  </script>
+</body>
+
+</html>
